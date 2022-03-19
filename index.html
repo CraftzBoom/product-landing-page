@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="container">
+        <header id="header">
+          <div class="logo">
+            <img
+              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+              alt="Brand Logo"
+              id="header-img"
+            />
+          </div>
+          <nav id="nav-bar">
+            <ul class="list">
+              <li class="navbar-links" >
+                  <a class="nav-link" href="#feature">Features</a>
+                </li>
+              <li class="navbar-links" >
+                  <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+              <li class="navbar-links" >
+                <a class="nav-link" href="#form">Products</a>
+              </li>
+              <li class="navbar-links" >
+                <a class="nav-link navbar-signup" href="#form">SIGN IN</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="shoe-thumbnail">
+          <img class="shoe" src="/shoe.png" alt="shoe" />
+          <p class="tagline">JUST DO IT.</p>
+        </div>
+        <section id="feature">
+          <div class="grid">
+            <div class="icon">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+            </div>
+            <div class="description">
+              <h2 class="heading">Premium Materials</h2>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="description">
+              <h2 class="heading">Fast Shipping</h2>
+              <p class="para">
+                We make sure you receive your product as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa-solid fa-battery-full"></i>
+            </div>
+            <div class="description">
+              <h2 class="heading">Quality Assurance</h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages
+                or faults and we will check and test the pitch of your
+                instrument.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="content">
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VMqiNvYa9zA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <div id="pricing">
+          <div class="product" id="gold">
+            <div class="sub-heading">Gold</div>
+            <h2 class="level">$200</h2>
+            <ol>
+              <li class="access">Sample Text Here</li>
+              <li class="access">Other Text Title</li>
+              <li class="access">Text Space Goes Here</li>
+              <li class="access">description Space</li>
+            </ol>
+            <button type="button">SELECT</button>
+          </div>
+          <div class="product" id="advanced">
+            <div class="sub-heading">Advanced</div>
+            <h2 class="level">$600</h2>
+            <ol>
+              <li class="access">Sample Text Here</li>
+              <li class="access">Other Text Title</li>
+              <li class="access">Text Space Goes Here</li>
+              <li class="access">description Space</li>
+            </ol>
+            <button type="button">SELECT</button>
+          </div>
+          <div class="product" id="premium">
+            <div class="sub-heading">Premium</div>
+            <h2 class="level">$800</h2>
+            <ol>
+              <li class="access">Sample Text Here</li>
+              <li class="access">Other Text Title</li>
+              <li class="access">Text Space Goes Here</li>
+              <li class="access">description Space</li>
+            </ol>
+            <button type="button">SELECT</button>
+          </div>
+        </div>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <div class="form-desc">
+            <h2 class="form-title">Be the first to know</h2>
+            <p class="desc">
+              Sign up for Nikeew emails to be the first to see inspiring content,
+              news and exclusive offers.
+            </p>
+          </div>
+          <div class="form-info">
+            <label class="input-label" for="name"
+              >Name*
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="text-input"
+                placeholder="Enter your name"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-info">
+            <label class="input-label email-label" for="name"
+              >Email address*
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="text-input"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-info double-line">
+            <label for="age" class="input-label input-size"
+              >Age*
+              <input
+                type="number"
+                name="age"
+                id="age"
+                min="10"
+                max="99"
+                class="text-input"
+                placeholder="Date of Birth"
+                required
+              />
+            </label>
+            <label for="preference" id="category" class="input-label input-size"
+              >Shopping Preference*
+              <select name="preference" id="preference" class="text-input">
+                <option selected value>Choose</option>
+                <option value="M">Men's</option>
+                <option value="F">Women's</option>
+              </select>
+            </label>
+          </div>
+          <button id="submit" class="form-btn" type="submit">
+            GET STARTED
+          </button>
+          <p class="terms">
+            By signing up, you agree to Nikeew's
+            <a href="#" class="terms-policy">Privacy Policy</a>
+            and
+            <a href="#" class="terms-policy">Terms of Use.</a>
+          </p>
+        </form>
+        <footer id="footer">
+          <div class="footer-links">
+            <div class="footer-nav">
+              <ul class="links-list">
+                <li class="links"><a href="#">Terms of Use</a></li>
+                <li class="links"><a href="#">Privacy Policy</a></li>
+                <li class="links"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="copyrights">
+              &copy; 2022 Nikeew, Inc. All Right Reserved
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/c8e17f5f48.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
